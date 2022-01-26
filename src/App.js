@@ -7,14 +7,11 @@ import Chat from './Components/Chat';
 function App() {
   return (
     <Router>
-    <div className="app">
-    <Routes>
-      <Route path="/" element={<LoginForm />} />
-      <Route path="/home" element={<HomePage />}/>
-      <Route path="/chat" element={<Chat />} />
-    </Routes>
-      
-    </div>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/home" element={<HomePage />}/>
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
     </Router>
     
   );

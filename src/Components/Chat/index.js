@@ -3,7 +3,7 @@ import socketIoClient from "socket.io-client";
 import ScrollToBottom from 'react-scroll-to-bottom';
 import './Chat.css';
 
-const socket = socketIoClient.connect("http://localhost:5000");
+const socket = socketIoClient.connect("https://pkh-app.herokuapp.com");
 
 function Chat() {
   const [username, setUsername] = useState("");

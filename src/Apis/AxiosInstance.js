@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 console.log("lấy ra", localStorage.getItem('token'));
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://pkh-app.herokuapp.com",
   headers: {
     Authorization: localStorage.getItem("token")
   }

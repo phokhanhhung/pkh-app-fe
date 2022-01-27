@@ -1,6 +1,6 @@
 import './App.css';
 import LoginForm from './Components/LoginForm';
-import {HashRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Chat from './Components/Chat';
 

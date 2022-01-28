@@ -32,14 +32,14 @@ function LoginForm() {
         password: e.target.password.value,
       })
       .then(res => {
-        // console.log("res", res.data);
+        console.log("res", res.data);
         localStorage.removeItem("token");
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("refreshToken", res.data.refreshToken);
         navigate('/home');           
         window.location.reload();     
       })
-      // .catch(err => console.log("err", err))
+      .catch(err => console.log("err", err))
     }
   }
 
@@ -57,7 +57,7 @@ function LoginForm() {
         setAlertPass(false);
       }
     } else {
-      axios.post('http://localhost:5000/user/signup', {
+      axios.post('https://pkh-app.herokuapp.com/user/signup', {
         username: e.target.user.value,
         password: e.target.pass.value,
       })

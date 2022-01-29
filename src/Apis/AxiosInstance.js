@@ -2,7 +2,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 import { Navigate } from "react-router-dom";
 
-console.log("lấy ra", localStorage.getItem('token'));
+// console.log("lấy ra", localStorage.getItem('token'));
 
 const axiosInstance = axios.create({
   baseURL: "https://pkh-app.herokuapp.com",

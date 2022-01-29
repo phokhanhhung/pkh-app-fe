@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './LoginForm.css';
 import axios from 'axios';
-import Cookies from 'js-cookie';
 import { useNavigate } from "react-router-dom";
 import axiosInstance from '../../Apis/AxiosInstance';
 

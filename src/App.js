@@ -3,6 +3,7 @@ import LoginForm from './Components/LoginForm';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Chat from './Components/Chat';
+import VideoCall from './Pages/VideoCall';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/video-call" element={<VideoCall />} />
       </Routes>
     </Router>
     

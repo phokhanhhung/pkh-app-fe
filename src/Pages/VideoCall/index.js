@@ -92,7 +92,7 @@ function VideoCall() {
 
   const leaveCall = () => {
     setCallEnded(true);
-    connectionRef.current.destroy()
+    connectionRef.current.destroy();
   }
 
   return (

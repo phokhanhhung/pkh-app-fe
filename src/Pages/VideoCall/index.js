@@ -27,7 +27,7 @@ function VideoCall() {
   const connectionRef = useRef();
 
   useEffect(() => {
-    navigator.mediaDevices.getUserMedia({vidoe: true, audio: true}).then(stream => {
+    navigator.mediaDevices.getUserMedia({video: true, audio: true}).then(stream => {
       setStream(stream);
       myVideo.current.srcObject = stream
     })
